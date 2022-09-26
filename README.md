@@ -15,7 +15,7 @@
 - 有三个属性：名字，得分（赢了得一分，输了不扣分），出拳策略 |
 | Strategy（已写好） | 接口，代表出拳策略，已经写好
 public interface Strategy {
-    Hand nextHand();
+    Hand nextHand(int round);
 } |
 | RandomStrategy | 实现了Strategy接口，为随机出拳 |
 | SequentialStrategy | 实现了Strategy接口，为石头剪刀布按顺序出拳 |
